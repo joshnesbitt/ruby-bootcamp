@@ -1,0 +1,8 @@
+---
+- hosts: devmachines
+  user: "{{user}}"
+  roles:
+    - role: common
+    - role: rbenv
+    - role: ruby-build
+    - role: dev

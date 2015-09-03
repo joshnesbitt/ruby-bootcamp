@@ -1,0 +1,10 @@
+---
+virtual_hosts:
+  - hostname: dev-help.sky.com
+    port: 3000
+  - hostname: dev-help.bskyb.com
+    port: 3000
+  - hostname: test-help.sky.com
+    port: 3001
+  - hostname: mock-api.sky.com
+    port: 4567

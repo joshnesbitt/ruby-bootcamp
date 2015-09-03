@@ -1,0 +1,10 @@
+---
+- name: Set env variables
+  copy: src=custom.bash
+        dest=~/.bash.d/custom.bash mode=700
+  tags: env_vars
+
+- name: Source bash fragment
+  lineinfile: dest=~/.bash_profile regexp="custom" insertafter=EOF line="source ~/.bash.d/custom.bash" create=yes state=present
+  tags: env_vars
+
